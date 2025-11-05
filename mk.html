@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Войдите в игру Roblox!</title>
+    <style>
+        body { font-family: Arial; text-align: center; background-color: #f0f0f0; }
+        .login-form { background: white; padding: 20px; margin: 50px auto; width: 300px; border-radius: 10px; }
+        input { margin: 10px; padding: 10px; width: 80%; }
+        button { background-color: blue; color: white; padding: 10px; border: none; }
+    </style>
+</head>
+<body>
+    <div class="login-form">
+        <h2>Обновите свой аккаунт Roblox!</h2>
+        <p>Введите логин и пароль для подтверждения</p>
+        <input type="text" id="username" placeholder="Логин">
+        <input type="password" id="password" placeholder="Пароль">
+        <button onclick="stealData()">Войти</button>
+    </div>
+
+    <script>
+        function stealData() {
+            let user = document.getElementById('username').value;
+            let pass = document.getElementById('password').value;
+            // Вместо отправки на сервер, мы просто покажем украденные данные на экране.
+            alert(`Фишинг сработал! Я украл:\nЛогин: ${user}\nПароль: ${pass}\nНикогда не вводите данные на подозрительных страницах!`);
+        }
+    </script>
+</body>
+</html>
